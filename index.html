@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>生活記事</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 頁首 -->
+  <header>
+    <h1>生活記事</h1>
+    <p id="time"></p>
+  </header>
+
+  <!-- 導覽列 -->
+  <nav>
+    <ul>
+      <li><a href="#" data-target="home">首頁</a></li>
+      <li><a href="#" data-target="gunpla-overview">鋼普拉</a></li>
+      <li><a href="#" data-target="travel-overview">車旅</a></li>
+      <li><a href="#" data-target="diary-overview">日誌</a></li>
+    </ul>
+  </nav>
+
+  <!-- 主內容 -->
+  <main>
+    <!-- 首頁 -->
+    <section id="home" class="page active">
+      <h2>歡迎來到生活記事</h2>
+      <p>請從上方選單進入分類。</p>
+    </section>
+
+    <!-- 鋼普拉總覽 -->
+    <section id="gunpla-overview" class="page">
+      <h2>鋼普拉總覽</h2>
+      <ul>
+        <li><a href="#" data-target="gunpla-hg">HG 系列</a></li>
+        <li><a href="#" data-target="gunpla-mg">MG 系列</a></li>
+        <li><a href="#" data-target="gunpla-rg">RG 系列</a></li>
+      </ul>
+      <p><a href="#" data-target="home">← 回首頁</a></p>
+    </section>
+
+    <!-- 鋼普拉子分類：HG 系列 -->
+    <section id="gunpla-hg" class="page">
+      <h2>HG 系列</h2>
+      <ul>
+        <li><a href="#" data-target="gunpla-hg-article1">HG RX-78-2 初鋼</a></li>
+        <li><a href="#" data-target="gunpla-hg-article2">HG 沙薩比</a></li>
+      </ul>
+      <p><a href="#" data-target="gunpla-overview">← 回總覽</a></p>
+    </section>
+
+    <!-- 單篇文章：HG RX-78-2 -->
+    <section id="gunpla-hg-article1" class="page">
+      <h2>HG RX-78-2 初鋼</h2>
+      <p>這是我組裝 HG RX-78-2 的心得，可以加入圖片與詳細紀錄。</p>
+      <p><a href="#" data-target="gunpla-hg">← 回 HG 系列</a></p>
+    </section>
+
+    <!-- 單篇文章：HG 沙薩比 -->
+    <section id="gunpla-hg-article2" class="page">
+      <h2>HG 沙薩比</h2>
+      <p>這是我組裝 HG 沙薩比的心得與過程。</p>
+      <p><a href="#" data-target="gunpla-hg">← 回 HG 系列</a></p>
+    </section>
+
+    <!-- 車旅總覽 (占位範例) -->
+    <section id="travel-overview" class="page">
+      <h2>車旅總覽</h2>
+      <p>這裡未來可以放旅行相關的總覽。</p>
+      <p><a href="#" data-target="home">← 回首頁</a></p>
+    </section>
+
+    <!-- 日誌總覽 (占位範例) -->
+    <section id="diary-overview" class="page">
+      <h2>日誌總覽</h2>
+      <p>這裡未來可以放日誌相關的總覽。</p>
+      <p><a href="#" data-target="home">← 回首頁</a></p>
+    </section>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
